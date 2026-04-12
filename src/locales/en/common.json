@@ -1,0 +1,18 @@
+{
+  "common": {
+    "detail": "Detail",
+    "edit": "Edit",
+    "delete": "Delete",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "confirmMessage": "Are you sure?",
+    "back": "Back",
+    "minutes": "minutes",
+    "create": "Create",
+    "action": "Action",
+    "recommend": "Recommend for you",
+    "myCourses": "My Courses",
+    "seeAll": "See All",
+    "ok": "OK"
+  }
+}

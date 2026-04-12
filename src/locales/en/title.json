@@ -1,0 +1,28 @@
+{
+  "title": {
+    "home": "Home",
+    "instructors": "Instructors",
+    "list_instructor": "List Instructor",
+    "students": "Students",
+    "list_student": "List Student",
+    "courses": "Courses",
+    "list_course": "List Course",
+    "user_detail": "User Detail",
+    "course_detail": "Course Detail",
+    "profile": "User Profile",
+    "my_courses": "My Courses",
+    "list_lesson": "List Lesson",
+    "lesson_detail": "Lesson Detail",
+    "create_course": "Add New Course",
+    "edit_course": "Edit Course",
+    "verify_account": "Verify Account",
+    "exam": "Final Exam",
+    "create_exam": "Create Exam",
+    "edit_exam": "Edit Exam",
+    "manage_exam": "Manage Exam",
+    "forum": "Forum Course"
+  },
+  "message": {
+    "found_results": "Found {{count}} results for the keyword '{{keyword}}'"
+  }
+}

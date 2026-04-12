@@ -1,0 +1,38 @@
+import { Router } from 'express';
+import homeRouter from './home.routes';
+import authRouter from './auth.routes';
+import userRouter from './user.routes';
+import courseRouter from './course.routes';
+import lessonRouter from './lesson.routes';
+import examRouter from './exam.routes';
+import questionRouter from './question.routes';
+import searchRouter from './search.routes';
+import adminRouter from './admin.routes';
+import roomRouter from './room.routes';
+import forumRouter from './forum.routes';
+import upload from '../config/multer-config';
+
+import {
+  getUserProfile,
+  userUpdateProfileGet,
+  userUpdateProfilePost,
+} from '../controllers/user.controller';
+
+const router: Router = Router();
+
+router.use('/auth', authRouter);
+router.use('/users', userRouter);
+router.use('/courses', courseRouter);
+router.use('/courses/:courseId/forums', forumRouter);
+router.use('/courses/:courseId/lessons', lessonRouter);
+router.use('/courses/:courseId/exam', examRouter);
+router.use('/courses/:courseId/exam/:examId/questions', questionRouter);
+router.use('/', searchRouter);
+router.use('/', homeRouter);
+router.use('/room', roomRouter);
+router.use('/admin', adminRouter);
+router.get('/profile', getUserProfile);
+router.get('/profile/update', userUpdateProfileGet);
+router.post('/profile/update', upload.single('avatar'), userUpdateProfilePost);
+
+export default router;

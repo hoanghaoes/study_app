@@ -1,0 +1,39 @@
+{
+  "course": {
+    "overview": "Course overview",
+    "courses": "courses",
+    "newCourse": "Add New Course",
+    "editCourse": "Edit Course",
+    "addDiscussion": "Add Discussion",
+    "studentList": "Student List",
+    "allLevels": "All Levels",
+    "allStatus": "All Status",
+    "learning": "Continue Learning",
+    "progress": "Learning Progress",
+    "detail": {
+      "meetingRoom": "Meeting Room",
+      "forum": "Forum Course",
+      "about": "About this Course",
+      "taughtBy": "Taught by",
+      "instructor": "Instructor",
+      "subInstructor": "Sub Instructor"
+    }
+  },
+  "courseLevels": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "expert": "Expert"
+  },
+  "buttons": {
+    "enrollNow": "Enroll Now",
+    "learnNow": "Learn Now"
+  },
+  "courseDetails": {
+    "instructor": "Instructor",
+    "student": "Student",
+    "students": "students",
+    "duration": "Duration",
+    "lessons": "Lessons List"
+  }
+}

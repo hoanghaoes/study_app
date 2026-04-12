@@ -1,0 +1,28 @@
+{
+  "title": {
+    "home": "Trang chủ",
+    "instructors": "Giảng viên",
+    "list_instructor": "Danh sách giảng viên",
+    "students": "Sinh viên",
+    "list_student": "Danh sách sinh viên",
+    "courses": "Khóa học",
+    "list_course": "Danh sách khóa học",
+    "user_detail": "Chi tiết người dùng",
+    "course_detail": "Chi tiết khóa học",
+    "profile": "Trang cá nhân",
+    "my_courses": "Khóa học của tôi",
+    "list_lesson": "Danh sách bài học",
+    "lesson_detail": "Chi tiết bài học",
+    "create_course": "Tạo khóa học mới",
+    "edit_course": "Chỉnh sửa khóa học",
+    "verify_account": "Xác minh tài khoản",
+    "exam": "Kiểm tra cuối khóa",
+    "create_exam": "Tạo bài kiểm tra",
+    "edit_exam": "Chỉnh sửa bài kiểm tra",
+    "manage_exam": "Quản lý bài kiểm tra",
+    "forum": "Diễn đàn khóa học"
+  },
+  "message": {
+    "found_results": "Tìm thấy {{count}} kết quả với từ khóa '{{keyword}}'"
+  }
+}
