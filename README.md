@@ -2,9 +2,9 @@
 
 ## Cán bộ hướng dẫn
 
-**T**
+**Trương Ninh Thuận**
 
-## Thành viên nhóm 9
+## Thành viên nhóm 12
 
 
 
@@ -102,7 +102,7 @@ docker: 27.3.1
 **Step 1:** Clone this repository
 
 ```bash
-git clone https://github.com/PhamMinhVuong21020425/smart-education.git
+git clone 
 ```
 
 **Step 2:** Create `.env` file in the root directory at the same level as `docker-compose.yml`. Copy the contents of the `.env.example` file into the `.env` file and fill in the values ​​for the environment variables.
