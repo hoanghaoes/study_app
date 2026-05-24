@@ -1,7 +1,15 @@
 extends ../layout
 include detail.pug
+include ../mixins/back-navigation.pug
 
 block content
+  -
+    const navigationItems = [
+      { href: '/courses', label: t('course.allCourses') },
+      { href: `/courses/${courseID}`, label: t('course.overview') },
+      { label: lessonDetail ? lessonDetail.title : grade ? t('lesson.finalExam') : t('course.overview') },
+    ];
+  +breadcrumb(navigationItems)
   .flex.items-start
     nav.mr-10(class='min-w-[250px]')
       .overflow-auto

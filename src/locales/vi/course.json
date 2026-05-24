@@ -2,6 +2,12 @@
   "course": {
     "overview": "Tổng quan khóa học",
     "courses": "khóa học",
+    "allCourses": "Tất cả khóa học",
+    "backToAllCourses": "Quay lại tất cả khóa học",
+    "backToCourseOverview": "Quay lại tổng quan khóa học",
+    "backToLessons": "Quay lại danh sách bài học",
+    "backToForums": "Quay lại diễn đàn",
+    "backToCourseManagement": "Quay lại quản lý khóa học",
     "newCourse": "Tạo khóa học",
     "editCourse": "Chỉnh sửa khóa học",
     "addDiscussion": "Thêm thảo luận",

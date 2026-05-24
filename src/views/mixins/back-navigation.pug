@@ -1,0 +1,30 @@
+mixin backLink(href, label)
+  a.inline-flex.items-center.text-blue-600.transition-colors.mb-6(
+    class='hover:text-blue-800',
+    href=href
+  )
+    svg.w-5.h-5.mr-2(
+      xmlns='http://www.w3.org/2000/svg',
+      viewBox='0 0 24 24',
+      fill='none',
+      stroke='currentColor',
+      stroke-width='2',
+      stroke-linecap='round',
+      stroke-linejoin='round'
+    )
+      circle(cx='12', cy='12', r='10')
+      polyline(points='12 8 8 12 12 16')
+      line(x1='16', y1='12', x2='8', y2='12')
+    span.font-medium= label
+
+mixin breadcrumb(items)
+  nav.mb-6.text-sm.text-gray-500(aria-label='Breadcrumb')
+    ol.flex.flex-wrap.items-center.gap-2
+      each item, index in items
+        if index > 0
+          li.text-gray-400 /
+        li
+          if item.href
+            a.text-blue-600.font-medium(href=item.href, class='hover:text-blue-800 hover:underline')= item.label
+          else
+            span.text-gray-700.font-medium= item.label

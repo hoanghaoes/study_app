@@ -1,7 +1,9 @@
 extends ../layout
+include ../mixins/back-navigation.pug
 
 block content
   .max-w-3xl.mx-auto
+    +backLink(`/courses/${courseID}/manage#exam`, t('course.backToCourseManagement'))
     .bg-white.rounded-lg.border.p-8
       .space-y-6
         // Header Section

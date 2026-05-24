@@ -1,4 +1,5 @@
 extends ../layout
+include ../mixins/back-navigation.pug
 
 mixin formatDate(date)
   - const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false };
@@ -25,6 +26,7 @@ block content
     include ./form.pug
 
     .max-w-6xl.mx-auto.bg-white.p-6
+      +backLink(`/courses/${course.id}/lessons`, t('course.backToCourseOverview'))
       // Course Title
       .flex.justify-between.items-center
         h1.text-4xl.font-bold.mb-4= course.name

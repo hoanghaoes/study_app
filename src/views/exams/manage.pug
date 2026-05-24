@@ -1,4 +1,5 @@
 extends ../layout
+include ../mixins/back-navigation.pug
 
 mixin formatDate(date)
   - const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false };
@@ -9,6 +10,7 @@ block content
   include ../questions/create_modal.pug
 
   .container.mx-auto.px-4
+    +backLink(`/courses/${courseID}/manage#exam`, t('course.backToCourseManagement'))
     .flex.justify-between.items-center.mb-4
       h1.text-3xl.font-bold= exam.name
 

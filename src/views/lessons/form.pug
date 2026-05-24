@@ -1,4 +1,5 @@
 extends ../layout
+include ../mixins/back-navigation.pug
 
 block content
   // Notification Modal
@@ -40,26 +41,8 @@ block content
       ) Cancel Upload
 
   .max-w-3xl.mx-auto
+    +backLink(`/courses/${courseID}/manage?lessonPage=${currentLessonPage}#lesson`, t('course.backToCourseManagement'))
     .bg-white.rounded-lg.border.p-8
-      // Back to Course Management Link
-      a.inline-flex.items-center.text-blue-600.mb-6(
-        class='hover:text-blue-800',
-        href=`/courses/${courseID}/manage?lessonPage=${currentLessonPage}#lesson`
-      )
-        svg.w-5.h-5.mr-2(
-          xmlns='http://www.w3.org/2000/svg',
-          viewBox='0 0 24 24',
-          fill='none',
-          stroke='currentColor',
-          stroke-width='2',
-          stroke-linecap='round',
-          stroke-linejoin='round'
-        )
-          circle(cx='12', cy='12', r='10')
-          polyline(points='12 8 8 12 12 16')
-          line(x1='16', y1='12', x2='8', y2='12')
-        span #{ t('lesson.backToCourseManagement') }
-
       // Page Title
       .text-center.mb-8
         h1.text-3xl.font-bold.text-gray-900 #{ title }

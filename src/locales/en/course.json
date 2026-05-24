@@ -2,6 +2,12 @@
   "course": {
     "overview": "Course overview",
     "courses": "courses",
+    "allCourses": "All Courses",
+    "backToAllCourses": "Back to All Courses",
+    "backToCourseOverview": "Back to Course Overview",
+    "backToLessons": "Back to Lessons",
+    "backToForums": "Back to Forums",
+    "backToCourseManagement": "Back to Course Management",
     "newCourse": "Add New Course",
     "editCourse": "Edit Course",
     "addDiscussion": "Add Discussion",

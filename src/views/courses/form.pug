@@ -1,4 +1,5 @@
 extends ../layout
+include ../mixins/back-navigation.pug
 
 block content
   body
@@ -30,6 +31,7 @@ block content
               ) Cancel
 
     .max-w-4xl.mx-auto.bg-white.rounded-lg.p-6
+      +backLink(course ? `/courses/${course.id}` : '/courses', course ? t('course.backToCourseOverview') : t('course.backToAllCourses'))
       .flex.justify-between.items-center.mb-6
         h1.text-3xl.font-bold= title
         if course

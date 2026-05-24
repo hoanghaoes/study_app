@@ -1,10 +1,18 @@
 extends ../layout
 include comment.pug
+include ../mixins/back-navigation.pug
 
 block content
   include ./form.pug
 
   .max-w-6xl.mx-auto.bg-white.p-6
+    -
+      const navigationItems = [
+        { href: `/courses/${course.id}/lessons`, label: t('course.overview') },
+        { href: `/courses/${course.id}/forums`, label: t('course.detail.forum') },
+        { label: forum.title },
+      ];
+    +breadcrumb(navigationItems)
     // Course Title
     #course_title.flex.justify-between.items-center
       h1.text-4xl.font-bold.mb-4= course.name

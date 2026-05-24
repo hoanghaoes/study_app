@@ -1,7 +1,9 @@
 extends ../layout
+include ../mixins/back-navigation.pug
 
 block content
   .container.mx-auto.px-4
+    +backLink('/courses', t('course.backToAllCourses'))
     // Course Image
     img.w-full.h-96.object-cover.rounded-lg.mb-6(
       src=course.image_url === null ? '/images/course.png' : course.image_url,

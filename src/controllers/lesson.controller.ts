@@ -65,6 +65,7 @@ export const lessonCreateGet = asyncHandler(
     res.render('lessons/form', {
       title: req.t('lesson.create'),
       courseID: req.courseID,
+      currentLessonPage: 1,
     });
   }
 );
